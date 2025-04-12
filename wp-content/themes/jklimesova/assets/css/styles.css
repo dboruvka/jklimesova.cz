@@ -42,7 +42,10 @@ h1 {
     font-weight: 500;
 }
 
-
+img
+{
+    max-width: 100%;
+}
  .virtualni-sidlo,
  .kontaktujte-nas,
  .section-hp
