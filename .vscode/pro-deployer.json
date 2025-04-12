@@ -1,0 +1,31 @@
+{
+	"enableStatusBarItem": true,
+	"enableQuickPick": true,
+	"uploadOnSave": true,
+	"autoDelete": true,
+	"checkGitignore": false,
+	"activeTargets": [
+		"jk"
+	],
+	"concurrency": 5,
+	"ignore": [
+		".git/**/*",
+		".vscode/**/*"
+	],
+	"include": [],
+	"targets": [
+		{
+			"name": "jk",
+			"type": "ftp",
+			"host": "358213.w13.wedos.net",
+			"port": 21,
+			"user": "w358213",
+			"password": "K^9h5mx0C=",
+			"dir": "/www/domains/jk.davidboruvka.cz",
+			"baseDir": "/",
+			"privateKey": null,
+			"passphrase": null
+		}
+	
+	]
+}

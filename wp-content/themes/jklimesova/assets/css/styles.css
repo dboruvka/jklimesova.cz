@@ -1,0 +1,1078 @@
+
+:root {
+    --db-primary-color: #95cb0e;    /* zelená pro ikony, nadpisy */
+    --db-primary-color-rgb: 149, 203, 14;
+    
+    --db-secondary-color: #008eff;  /* modrá pro menu, tlačítka */
+    --db-secondary-color-rgb: 0, 142, 255;
+    
+    --db-light-color: #F5F5F5;
+}
+ 
+/* Import fontů */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans:wght@400;500&display=swap');
+
+/* Základní nastavení fontů */
+:root {
+    --font-headings: 'Montserrat', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+}
+
+/* Základní text */
+body {
+    font-family: var(--font-body);
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* Nadpisy */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-headings);
+    font-weight: 500;
+}
+
+h1 {
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+/* Menu */
+.navbar-nav a {
+    font-family: var(--font-headings);
+    font-weight: 500;
+}
+
+
+ .virtualni-sidlo,
+ .kontaktujte-nas,
+ .section-hp
+{
+  margin-top: 70px;
+} 
+
+.sluzby-podnikani > div:nth-child(1) > div {
+    
+    background: linear-gradient(45deg, #fdf7f1 2%, #f5e7da 90%);
+}
+
+.sluzby-podnikani > div:nth-child(2) > div {
+    background: linear-gradient(45deg, #fdf7f1 2%, #f5e7da 90%);
+
+}
+
+.sluzby-podnikani > div:nth-child(3) > div {
+    background: linear-gradient(45deg, #fdf7f1 2%, #f5e7da 90%);
+
+
+
+
+}
+
+
+
+.kdo-jsme
+{
+    padding: 0 !important;
+}
+
+.kdo-jsme-sipka
+{
+    font-size: 150px;
+    /* color: var(--db-light-color); */
+    color: rgba(var(--db-primary-color-rgb), 0.1);
+}
+
+.kdo-jsme-sipka-wrapper
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 60px;
+}
+
+.kdo-jsme-sipka {
+    
+    animation: bounce 2s infinite;
+    animation-iteration-count: 1;
+
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(105px);
+    }
+    60% {
+      transform: translateY(8px);
+    }
+  }
+  
+
+  .fade-in-icons { animation: fade-in 5s; }
+
+  @keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .border-home > div
+  {
+    border: 1px solid rgba(var(--db-primary-color-rgb), 0.5);
+  }
+
+  .border-home
+  {
+    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.05);
+  }
+
+
+.kdo-jsme-col
+{
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(var(--db-secondary-color-rgb), 0.1);
+    border: 2px solid rgba(var(--db-secondary-color-rgb), 0.3);
+}
+
+
+.co-budeme-potrebovat h3::after
+{
+    display: none;
+}
+.co-budeme-potrebovat
+{
+    padding: 20px;
+    border-radius: 20px;
+
+    background-color: rgba(var(--db-secondary-color-rgb), 0.3);
+    border: 0px solid rgba(var(--db-secondary-color-rgb), 0.8);
+}
+
+.bg-carousel
+{
+    background-color: rgba(var(--db-secondary-color-rgb), 0.3);
+}
+
+/* .home .wp-bootstrap-blocks-row
+{
+margin-top: 60px;
+} */
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+}
+
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 100%, 100%;
+}
+
+
+
+.hp-banner
+{
+    background-color: var(--db-primary-color);
+}
+
+
+.btn-primary
+{
+    background-color: var(--db-primary-color) !important;
+    border: 0;
+}
+
+
+h2, h3,h4
+{
+    font-weight: 400 !important;
+    padding-bottom: 1rem;
+}
+
+
+.post p 
+{
+ padding-bottom: 1rem;
+} 
+
+.post strong
+{
+color: var(--db-primary-color);
+font-weight: 500;
+ 
+} 
+
+
+
+table a
+{
+    color: var(--db-primary-color);
+}
+
+table a:hover
+{
+    color: var(--db-secondary-color)
+}
+
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active
+{
+    color: white;
+    font-weight: 500;
+    /* background-color: rgba(var(--db-secondary-color-rgb), 0.5); */
+background-color: var(--db-primary-color);
+}
+
+.nav-tabs .nav-link
+{
+    color: var(--db-primary-color);
+    font-size: 20px;
+}
+
+.row.section-title::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-image: radial-gradient(circle, rgba(34, 85, 224, 0.2) 20%, transparent 70%);
+    opacity: 0.3;
+    z-index: 0;
+}
+
+
+.section-title,
+.section-hp
+{
+    background-color: var(--db-light-color);
+    
+}
+
+.bg-button
+{
+    background-color: var(--db-primary-color) !important;
+    color: white;
+}
+
+.section-hp h2,
+.section-hp h3,
+.section-hp h4,
+.site-main h2,
+.site-main h3
+
+{
+    color: var(--db-primary-color);
+}
+
+
+
+
+.text-primary
+    {
+        color: var(--db-primary-color) !important;
+    
+    }
+
+    .text-secondary
+    {
+        color: var(--db-secondary-color) !important;
+    
+    }
+
+
+.post 
+{
+    color: var(--db-secondary-color) !important;
+    font-size: 1.1rem;
+    line-height:  1.6rem;
+}
+
+
+h3 {
+    position: relative;
+    
+}
+
+h3::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 2px; 
+    background-color: var(--db-primary-color);
+    margin-top: 10px;
+
+}
+
+    .charakteristika div 
+    {
+        border: 1px solid rgba(var(--db-secondary-color-rgb), 0.5);
+        
+
+    }
+    
+
+
+
+
+
+.charakteristika i
+{
+    padding-right: 0.5rem;
+}
+
+ #wrapper-footer-full
+ {
+    background-color: var(--db-light-color);
+ }
+
+
+ #wrapper-footer-full h2,
+ #wrapper-footer-full h3
+ {
+  font-size: 20px;
+ }
+
+
+ 
+
+ #wrapper-footer-full  h3::after
+ {
+    background-color:unset;
+    height: unset;
+    width:unset;
+ }
+
+ .footer .row
+ {
+    padding: 20px 0;
+ }
+
+/* #wrapper-footer-full .menu li a
+ {
+ color: var(--db-primary-color)
+ }
+
+ #wrapper-footer-full .menu li
+ {
+ list-style: none;
+ }
+
+ #wrapper-footer-full .menu
+ {
+display: flex;
+flex-direction: row;
+column-gap: 2.5rem;
+
+
+ } */
+
+ /* #wrapper-footer-full .wp-bootstrap-blocks-row div
+ {
+    align-items: center;
+
+display: flex;
+ } */
+
+ /* #wrapper-footer-full
+ {
+    border-bottom: 1px solid rgba(var(--db-primary-color-rgb), 0.5);
+    border-top: 1px solid rgba(var(--db-primary-color-rgb), 0.5);
+ } */
+
+
+@media (min-width: 768px) 
+{
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      border-radius: 20px;
+      background-color: rgba(var(--db-primary-color-rgb), 0.7);
+  }
+  
+
+    .carousel-control-next
+{
+    right:-70px !important;
+}
+
+.carousel-control-prev
+{
+    left:-70px !important;
+}
+
+
+    iframe
+    {
+    width: 700px;        
+    height: 525px;
+    }        
+
+    .hr.my-5
+    {
+       margin: 5rem 0 !important;
+    }
+
+
+    .section-title
+    {
+        padding: 80px 0;
+        margin-bottom: 80px;        
+    }
+ 
+ 
+    .section-title h1
+    {
+            font-size: 4rem;
+    }
+
+
+    .navbar-nav a
+    {
+        font-size: 15px;
+
+    }
+
+    .navbar-nav > *:not(:last-child) {
+
+        font-size: 15px;
+        margin-right: 10px;
+    }
+
+    #menu-menu-1 {
+        /* background: linear-gradient(45deg, #fdf7f1 10%, #f5e9de 40%, #f5e7da 70%); */
+        /* background: linear-gradient(45deg, #f2f2f2 10%, #eeeeee 90%);
+        padding: 10px;
+         border-radius: 3px;  */
+        /* border: 1px solid rgba(var(--db-primary-color-rgb), 0.2);  */
+    }
+    
+
+
+    .navbar-nav .active a {
+        position: relative;
+        text-decoration: none; /* Zruší původní podtržení */
+    }
+    
+    
+
+    header
+    {
+        padding: 5px 0;
+        color: red;
+        margin: 25px;
+    }
+    
+
+
+}
+
+@media (max-width: 767px) 
+{
+
+    .kdo-jsme-sipka-wrapper
+    {
+        display: none;
+    }
+
+
+    .carousel-control-prev,
+  .carousel-control-next 
+  {
+    border-radius: 20px;
+    background-color: var(--db-primary-color);
+}
+
+
+
+    .carousel-control-next.top-50,
+    .carousel-control-prev.top-50
+{
+    top: unset !important;
+    bottom: 0px !important;
+    }
+
+
+
+    /* #wrapper-footer-full .menu
+    {
+   
+   flex-direction: column;
+   column-gap: 1rem;
+   
+   
+    } */
+
+
+}
+/* ===== HEADER & NAVIGATION ===== */
+.navbar-nav {
+    margin-left: 0 !important; /* Přepíše původní automatický margin */
+}
+
+.navbar-nav a {
+    color: var(--db-secondary-color) !important;
+    font-size: 17px !important;
+    text-transform: uppercase;
+    padding: 5px 15px !important;
+    position: relative;
+}
+
+.navbar-nav .active a {
+    text-decoration: none;
+    color: var(--db-primary-color) !important;
+}
+
+.navbar-nav .active a::after {
+    display: none;
+}
+
+.navbar-nav a:hover {
+    background-color: rgba(var(--db-secondary-color-rgb), 0.05);
+    border-radius: 4px;
+}
+
+.navbar-nav > * {
+    margin-right: 5px !important;
+}
+
+#menu-menu-1 {
+    background: none;
+    padding: 0;
+    border: none;
+}
+
+.above-menu-area {
+    padding-left: 20px;
+    flex-shrink: 0;
+    margin-left: auto;
+}
+
+.above-menu-widget {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.above-menu-widget p {
+    margin: 0;
+    color: black;
+    display: flex;
+    gap: 10px;
+}
+
+/* Kontejner pro ikonu a text */
+.above-menu-widget .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+}
+
+.above-menu-widget .bi {
+    margin-right: 5px;
+    color: var(--db-primary-color);
+}
+
+@media (max-width: 767px) {
+    .above-menu-area {
+        padding-left: 10px;
+        width: 100%;
+    }
+    
+    .above-menu-widget {
+        font-size: 0.85rem;
+    }
+
+    .above-menu-widget p {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Skryjeme oddělovač na mobilu */
+    .above-menu-widget p span.separator,
+    .above-menu-widget p .separator {
+        display: none;
+    }
+}
+
+.above-menu-widget a {
+    color: rgba(var(--db-secondary-color-rgb), 0.7);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.above-menu-widget a:hover {
+    color: var(--db-primary-color);
+}
+
+.above-menu-widget .bi {
+    margin-right: 5px;
+    margin-left: 5px;
+    color: var(--db-primary-color);
+}
+
+.above-menu-widget .widget-title {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav a {
+        font-size: 15px;
+    }
+
+    .navbar-nav > *:not(:last-child) {
+        font-size: 15px;
+        margin-right: 10px;
+    }
+
+    .navbar-nav .active a::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -2px;
+        transform: translateX(-50%);
+        width: 5px;
+        height: 5px;
+        border-radius: 5px;
+        background-color: var(--db-primary-color);
+    }
+
+    header {
+        padding: 5px 0;
+        margin: 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    .above-menu-area {
+        padding-left: 10px;
+    }
+    
+    .above-menu-widget {
+        font-size: 0.85rem;
+    }
+}
+
+/* ===== HEADINGS ===== */
+h2, h3, h4, h5, h6,
+.section-hp h2,
+.section-hp h3,
+.section-hp h4,
+.site-main h2,
+.site-main h3 {
+    color: var(--db-primary-color);
+    font-weight: 400 !important;
+    padding-bottom: 1rem;
+}
+
+h3 {
+    position: relative;
+}
+
+h3::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 2px;
+    background-color: var(--db-primary-color);
+    margin-top: 10px;
+}
+
+/* ===== FOOTER ===== */
+#wrapper-footer-full {
+    background-color: var(--db-light-color);
+    /* border-bottom: 1px solid rgba(var(--db-primary-color-rgb), 0.5);
+    border-top: 1px solid rgba(var(--db-primary-color-rgb), 0.5); */
+}
+
+#wrapper-footer-full h2,
+#wrapper-footer-full h3 {
+    font-size: 20px;
+}
+
+#wrapper-footer-full h3::after {
+    background-color: unset;
+    height: unset;
+    width: unset;
+}
+
+.footer .row {
+    padding: 20px 0;
+}
+
+/* #wrapper-footer-full .menu li a {
+    color: var(--db-primary-color);
+}
+
+#wrapper-footer-full .menu li {
+    list-style: none;
+}
+
+#wrapper-footer-full .menu {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2.5rem;
+}
+
+#wrapper-footer-full .wp-bootstrap-blocks-row div {
+    align-items: center;
+    display: flex;
+} */
+
+@media (max-width: 767px) {
+    /* #wrapper-footer-full .menu {
+        flex-direction: column;
+        column-gap: 1rem;
+    } */
+}
+
+/* Tlačítka */
+.btn-primary {
+    background-color: var(--db-secondary-color);
+    border: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--db-primary-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Ikony */
+.bi {
+    color: var(--db-primary-color);
+}
+
+/* Text s primární barvou */
+.text-primary {
+    color: var(--db-primary-color) !important;
+}
+
+/* Odkazy v textu */
+.post a,
+.widget a {
+    color: var(--db-secondary-color);
+    text-decoration: none;
+}
+
+.widget a {
+    color: black;
+    text-decoration: none;
+}
+
+
+.post a:hover,
+.widget a:hover {
+    color: var(--db-primary-color);
+}
+
+/* Linka pod nadpisy */
+h3::after {
+    background-color: var(--db-primary-color);
+}
+
+/* Blog sidebar */
+.blog-sidebar {
+    padding-left: 20px;
+}
+
+.widget-title {
+    color: var(--db-primary-color);
+    font-size: 1.25rem;
+    border-bottom: 2px solid var(--db-primary-color);
+    padding-bottom: 0.5rem;
+}
+
+.widget ul li {
+    margin-bottom: 0.5rem;
+}
+
+.widget ul li a {
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.widget ul li a:hover {
+    color: var(--db-primary-color);
+}
+
+.tag-cloud a {
+    border: 1px solid #333;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.tag-cloud a:hover {
+    background-color: #333;
+    color: white;
+}
+
+@media (max-width: 991px) {
+    .blog-sidebar {
+        padding-left: 0;
+        margin-top: 2rem;
+    }
+}
+
+/* Carousel controls */
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(var(--db-secondary-color-rgb), 0.7);
+}
+
+/* Aktivní tabs */
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    background-color: var(--db-secondary-color);
+    color: white;
+}
+
+.nav-tabs .nav-link {
+    color: var(--db-secondary-color);
+}
+
+
+/* Border elementy */
+.border-home > div {
+    border-color: rgba(var(--db-primary-color-rgb), 0.5);
+}
+
+/* Formulářové prvky */
+.form-control:focus {
+    border-color: var(--db-secondary-color);
+    box-shadow: 0 0 0 0.25rem rgba(var(--db-secondary-color-rgb), 0.25);
+}
+
+/* Footer styling */
+
+.footer-bottom {
+    background-color: #2e4153;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+.footer-bottom p {
+    margin: 0;
+}
+
+#wrapper-footer-full {
+    background-color: #f8f9fa;
+    padding: 60px 0 40px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+#wrapper-footer-full .footer-widget {
+    margin-bottom: 25px;
+}
+
+#wrapper-footer-full h3 {
+    color: #333;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--db-primary-color);
+    position: relative;
+}
+
+/* Odstranění přebytečné čáry pod nadpisem */
+#wrapper-footer-full h3::after {
+    display: none;
+}
+
+#wrapper-footer-full ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#wrapper-footer-full ul li {
+    margin-bottom: 12px;
+}
+
+#wrapper-footer-full a {
+    color: var(--db-secondary-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+#wrapper-footer-full a:hover {
+    color: var(--db-primary-color);
+}
+
+#wrapper-footer-full strong {
+    display: block;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Speciální styly pro kontaktní informace */
+#wrapper-footer-full .contact-info {
+    margin-bottom: 15px;
+}
+
+/* Responzivní úpravy */
+@media (max-width: 767px) {
+    #wrapper-footer-full {
+        padding: 40px 0 20px;
+    }
+    
+    #wrapper-footer-full .col-md-3 {
+        margin-bottom: 30px;
+    }
+    
+    #wrapper-footer-full h3 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+}
+
+/* Přidání ikonek k odkazům v prvním sloupci */
+#wrapper-footer-full .wp-block-list li a::before {
+    content: "›";
+    margin-right: 8px;
+    color: var(--db-primary-color);
+}
+
+/* Zvýraznění CTA v posledním sloupci */
+#wrapper-footer-full .col-md-3:last-child a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: var(--db-primary-color);
+    color: white;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+#wrapper-footer-full .col-md-3:last-child a:hover {
+    background-color: var(--db-secondary-color);
+    transform: translateY(-2px);
+}
+
+/* Uprava mezer po <br> v kontaktních informacích */
+#wrapper-footer-full .footer-widget p br {
+    content: "";
+    display: block;
+    margin-bottom: 3px; /* Zmenšení mezery po <br> */
+}
+
+/* Alternativně můžeme upravit line-height pro lepší kontrolu mezer */
+#wrapper-footer-full .footer-widget p {
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+/* Vyhledávací formulář */
+.search-form .input-group {
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+}
+
+.search-form .form-control {
+    border: none;
+    background: transparent;
+}
+
+.search-form .form-control:focus {
+    box-shadow: none;
+}
+
+.search-form .btn {
+    border-left: 1px solid #dee2e6;
+    background: transparent;
+    color: var(--db-secondary-color);
+}
+
+.search-form .btn:hover {
+    color: var(--db-primary-color);
+}
+
+.search-form .bi-search {
+    font-size: 1.1rem;
+}
+
+@media (max-width: 767px) {
+    /* Úprava kontejneru pro mobilní menu */
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        z-index: 1000;
+        padding: 4rem 1rem 1rem 1rem;
+        overflow-y: auto;
+        overflow-x: hidden; /* Zamezení horizontálního scrollování */
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Zamezení horizontálního scrollování na celé stránce při otevřeném menu */
+    body.menu-open {
+        overflow: hidden;
+        width: 100%;
+        position: fixed;
+    }
+
+    .navbar {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .container {
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        overflow-x: hidden;
+    }
+
+    .navbar-collapse.show {
+        transform: translateX(0);
+    }
+
+    /* Úprava pozice toggle tlačítka */
+    .navbar-toggler {
+        z-index: 1001;
+        position: relative;
+    }
+
+    /* Úprava vzhledu menu položek */
+    .navbar-nav {
+        margin-top: 2rem;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 1rem;
+    }
+
+    /* Přidání tlačítka pro zavření menu */
+    .navbar-collapse::before {
+        content: '×';
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 2rem;
+        cursor: pointer;
+        color: var(--db-primary-color);
+    }
+
+    /* Skrytí above-menu-area v mobilním menu */
+    .navbar-collapse .above-menu-area {
+        display: none;
+    }
+}

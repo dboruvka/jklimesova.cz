@@ -1,0 +1,17 @@
+# macOS systémové soubory
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Spotlight
+.Spotlight-V100
+
+# Trash
+.Trashes
+
+# macOS metadata
+._*
+
+# Time Machine
+.TemporaryItems
+.com.apple.timemachine.donotpresent
