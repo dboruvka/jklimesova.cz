@@ -34,7 +34,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. Všechna práva vyhrazena.</p>
+                <?php 
+                if (is_active_sidebar('footer-copyright')) {
+                    dynamic_sidebar('footer-copyright');
+                } else {
+                    echo '<p>&copy; ' . date('Y') . ' ' . get_bloginfo('name') . '. Všechna práva vyhrazena.</p>';
+                }
+                ?>
             </div>
         </div>
     </div>

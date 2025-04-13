@@ -92,6 +92,17 @@ function theme_widgets_init() {
         'before_title'  => '<h3 class="widget-title">',
         'after_title'   => '</h3>',
     ));
+
+    // Copyright widget
+    register_sidebar(array(
+        'name'          => 'Copyright text',
+        'id'            => 'footer-copyright',
+        'description'   => 'Text autorských práv v patičce',
+        'before_widget' => '<div class="footer-copyright">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
+    ));
 }
 add_action('widgets_init', 'theme_widgets_init');
 
@@ -156,5 +167,13 @@ function theme_enqueue_styles() {
 
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 
+// Shortcode pro aktuální rok
+function current_year_shortcode() {
+    return date('Y');
+}
+add_shortcode('rok', 'current_year_shortcode');
+
+// Povolení shortcodů ve widgetech
+add_filter('widget_text', 'do_shortcode');
 
 ?>
