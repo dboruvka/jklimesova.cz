@@ -8,6 +8,7 @@
 
 // Include the Bootstrap NavWalker class
 
+add_theme_support('post-thumbnails');
 
 
 require_once get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php';
